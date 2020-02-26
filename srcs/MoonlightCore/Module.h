@@ -1,7 +1,7 @@
 #pragma once
 #include <Windows.h>
 
-namespace Moonlight
+namespace MoonlightCore
 {
 	class Module
 	{

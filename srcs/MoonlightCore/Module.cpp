@@ -1,7 +1,7 @@
 #include "Module.h"
 #include <Psapi.h>
 
-namespace Moonlight
+namespace MoonlightCore
 {
 	Module Module::CreateModule()
 	{
