@@ -142,13 +142,11 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Module.h" />
-    <ClInclude Include="Moonlight.h" />
     <ClInclude Include="Network.h" />
     <ClInclude Include="PacketType.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Module.cpp" />
-    <ClCompile Include="Moonlight.cpp" />
     <ClCompile Include="Network.cpp" />
   </ItemGroup>
   <ItemGroup>

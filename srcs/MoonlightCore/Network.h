@@ -14,13 +14,11 @@ namespace MoonlightCore
 		Network operator=(Network const&) = delete;
 		Network operator=(Network&&) = delete;
 	private:
-		unsigned int _recvPacketAddress;
-		unsigned int _sendPacketAddress;
-		unsigned int _callerObject;
+		unsigned int _recvPacketAddress = 0;
+		unsigned int _sendPacketAddress = 0;
+		unsigned int _callerObject = 0;
 
 		std::map<PacketType, PacketCallback> _callbacks;
-
-		void Setup(Module module);
 
 		static void OnPacketReceived();
 		static void OnPacketSend();
@@ -31,6 +29,7 @@ namespace MoonlightCore
 		void SendPacket(const char* packet);
 		void ReceivePacket(const char* packet);
 
+		void Setup(Module* module);
 		void SetCallback(PacketType packetType, PacketCallback callback);
 
 		static Network* GetInstance()
