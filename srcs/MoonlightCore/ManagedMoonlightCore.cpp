@@ -16,12 +16,12 @@ namespace MoonlightCore
 
 	void ManagedMoonlightCore::SendPacket(System::String^ packet)
 	{
-		_network->SendPacket(NtString(StringToCharArray(packet)).toString());
+		_network->SendPacket(NtString(StringToCharArray(packet)).ToString());
 	}
 
 	void ManagedMoonlightCore::ReceivePacket(System::String^ packet)
 	{
-		_network->ReceivePacket(NtString(StringToCharArray(packet)).toString());
+		_network->ReceivePacket(NtString(StringToCharArray(packet)).ToString());
 	}
 
 	void ManagedMoonlightCore::Walk(short x, short y)
