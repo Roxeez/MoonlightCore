@@ -2,6 +2,9 @@
 
 namespace MoonlightCore
 {
+    DWORD _walkObject;
+    DWORD _walkFunction;
+
 	Character::Character(Module module)
 	{
         _walkObject = *(DWORD*)(module.FindPattern<DWORD>("\x33\xC9\x8B\x55\xFC\xA1\x00\x00\x00\x00\xE8\x00\x00\x00\x00", "xxxxxx????x????") + 0x6);
@@ -22,14 +25,15 @@ namespace MoonlightCore
     void Character::Walk(short x, short y)
     {
         DWORD position = (y << 16) | x;
+
         __asm
         {
             push 1
             xor ecx, ecx
             mov edx, position
-            mov eax, dword ptr ds : [this._walkObject]
+            mov eax, dword ptr ds : [_walkObject]
             mov eax, dword ptr ds : [eax]
-            call this._walkFunction
+            call _walkFunction
         }
     }
 }
