@@ -8,9 +8,10 @@ namespace MoonlightCore
 	{
 		ManagedMoonlight::ManagedMoonlight()
 		{
-			MoonlightCore::Network* network = MoonlightCore::Network::GetInstance();
 			Module module = Module::CreateModule();
-			network->Setup(&module);
+
+			_network = MoonlightCore::Network::GetInstance()->Setup(module);
+			_character = new Character(module);
 		}
 
 		void ManagedMoonlight::SendPacket(System::String^ packet)
@@ -25,7 +26,7 @@ namespace MoonlightCore
 
 		void ManagedMoonlight::Walk(short x, short y)
 		{
-			// TODO :
+			_character->Walk(x, y);
 		}
 	}
 }

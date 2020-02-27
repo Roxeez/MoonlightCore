@@ -1,5 +1,6 @@
 #pragma once
 #include "../MoonlightCore/Network.h"
+#include "../MoonlightCore/Character.h"
 
 namespace MoonlightCore
 {
@@ -9,6 +10,7 @@ namespace MoonlightCore
 		{
 		private:
 			MoonlightCore::Network* _network;
+			MoonlightCore::Character* _character;
 		public:
 			ManagedMoonlight();
 			void SendPacket(System::String^ packet);

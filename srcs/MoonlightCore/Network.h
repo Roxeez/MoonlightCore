@@ -29,7 +29,7 @@ namespace MoonlightCore
 		void SendPacket(const char* packet);
 		void ReceivePacket(const char* packet);
 
-		void Setup(Module* module);
+		Network* Setup(Module module);
 		void SetCallback(PacketType packetType, PacketCallback callback);
 
 		static Network* GetInstance()
