@@ -6,12 +6,17 @@ namespace MoonlightCore
 {
 	namespace Managed
 	{
+		public delegate bool NetworkCallback(System::String^ packet);
+
 		public ref class ManagedMoonlight 
 		{
 		private:
 			MoonlightCore::Network* _network;
 			MoonlightCore::Character* _character;
 		public:
+			NetworkCallback^ PacketReceived;
+			NetworkCallback^ PacketSend;
+
 			ManagedMoonlight();
 			void SendPacket(System::String^ packet);
 			void ReceivePacket(System::String^ packet);

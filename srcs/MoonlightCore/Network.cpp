@@ -124,13 +124,16 @@ namespace MoonlightCore
 
     bool Network::ExecuteCallback(PacketType packetType, const char* packet)
     {
-        PacketCallback callback = _callbacks[packetType];
+        auto it = _callbacks.find(packetType);
 
-        if (callback == 0)
+        if (it != _callbacks.end())
         {
-            return true;
+            if (it->second)
+            {
+                return it->second(packet);
+            }
         }
 
-        return callback(packet);
+        return true;
     }
 }

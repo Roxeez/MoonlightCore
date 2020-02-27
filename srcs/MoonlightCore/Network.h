@@ -5,10 +5,10 @@
 
 namespace MoonlightCore
 {
+	typedef bool(__stdcall* PacketCallback)(const char* packet);
+
 	class Network
 	{
-		typedef bool(__stdcall* PacketCallback)(const char* packet);
-
 		Network(Network const&) = delete;
 		Network(Network&&) = delete;
 		Network operator=(Network const&) = delete;
