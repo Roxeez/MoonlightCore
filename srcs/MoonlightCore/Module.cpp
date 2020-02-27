@@ -38,6 +38,8 @@ namespace MoonlightCore
 				return data;
 			}
 		}
+
+		return nullptr;
 	}
 
 	bool Module::Match(const byte* data, const char* signature, const char* mask) const
