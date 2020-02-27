@@ -1,4 +1,5 @@
 #include "ManagedMoonlightCore.h"
+#include "NtString.h"
 
 using namespace System;
 using namespace System::Runtime::InteropServices;
@@ -15,12 +16,12 @@ namespace MoonlightCore
 
 	void ManagedMoonlightCore::SendPacket(System::String^ packet)
 	{
-		_network->SendPacket(StringToCharArray(packet));
+		_network->SendPacket(NtString(StringToCharArray(packet)).toString());
 	}
 
 	void ManagedMoonlightCore::ReceivePacket(System::String^ packet)
 	{
-		_network->ReceivePacket(StringToCharArray(packet));
+		_network->ReceivePacket(NtString(StringToCharArray(packet)).toString());
 	}
 
 	void ManagedMoonlightCore::Walk(short x, short y)

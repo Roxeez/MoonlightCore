@@ -130,6 +130,7 @@
     <ClCompile Include="ManagedMoonlightCore.cpp" />
     <ClCompile Include="Module.cpp" />
     <ClCompile Include="Network.cpp" />
+    <ClCompile Include="NtString.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -141,6 +142,7 @@
     <ClInclude Include="ManagedMoonlightCore.h" />
     <ClInclude Include="Module.h" />
     <ClInclude Include="Network.h" />
+    <ClInclude Include="NtString.h" />
     <ClInclude Include="PacketType.h" />
   </ItemGroup>
   <ItemGroup>

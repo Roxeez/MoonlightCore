@@ -30,6 +30,9 @@
     <ClCompile Include="Character.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="NtString.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -48,6 +51,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Character.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NtString.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
