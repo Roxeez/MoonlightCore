@@ -125,7 +125,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="AssemblyInfo.cpp" />
-    <ClCompile Include="Moonlight.cpp" />
+    <ClCompile Include="ManagedMoonlightCore.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -133,7 +133,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Moonlight.h" />
+    <ClInclude Include="ManagedMoonlightCore.h" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\MoonlightCore\MoonlightCore.vcxproj">

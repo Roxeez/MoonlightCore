@@ -8,19 +8,18 @@ namespace MoonlightCore
 	{
 		public delegate bool NetworkCallback(System::String^ packet);
 
-		public ref class ManagedMoonlight 
+		public ref class ManagedMoonlightCore 
 		{
 		private:
 			MoonlightCore::Network* _network;
 			MoonlightCore::Character* _character;
 		public:
-			NetworkCallback^ PacketReceived;
-			NetworkCallback^ PacketSend;
-
-			ManagedMoonlight();
+			ManagedMoonlightCore();
 			void SendPacket(System::String^ packet);
 			void ReceivePacket(System::String^ packet);
 			void Walk(short x, short y);
+			void SetRecvCallback(NetworkCallback^ callback);
+			void SetSendCallback(NetworkCallback^ callback);
 
 			static const char* StringToCharArray(System::String^ string)
 			{
