@@ -3,9 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29806.167
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MoonlightCore", "srcs\MoonlightCore\MoonlightCore.vcxproj", "{D5E2977A-BF00-4A1A-B5E4-74F9D96C63E3}"
-EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MoonlightCore.Managed", "srcs\MoonlightCore.Managed\MoonlightCore.Managed.vcxproj", "{6713436A-4B03-46B9-A638-16223CBF45BF}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MoonlightCore", "srcs\MoonlightCore\MoonlightCore.vcxproj", "{6713436A-4B03-46B9-A638-16223CBF45BF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,14 +13,6 @@ Global
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{D5E2977A-BF00-4A1A-B5E4-74F9D96C63E3}.Debug|x64.ActiveCfg = Debug|x64
-		{D5E2977A-BF00-4A1A-B5E4-74F9D96C63E3}.Debug|x64.Build.0 = Debug|x64
-		{D5E2977A-BF00-4A1A-B5E4-74F9D96C63E3}.Debug|x86.ActiveCfg = Debug|Win32
-		{D5E2977A-BF00-4A1A-B5E4-74F9D96C63E3}.Debug|x86.Build.0 = Debug|Win32
-		{D5E2977A-BF00-4A1A-B5E4-74F9D96C63E3}.Release|x64.ActiveCfg = Release|x64
-		{D5E2977A-BF00-4A1A-B5E4-74F9D96C63E3}.Release|x64.Build.0 = Release|x64
-		{D5E2977A-BF00-4A1A-B5E4-74F9D96C63E3}.Release|x86.ActiveCfg = Release|Win32
-		{D5E2977A-BF00-4A1A-B5E4-74F9D96C63E3}.Release|x86.Build.0 = Release|Win32
 		{6713436A-4B03-46B9-A638-16223CBF45BF}.Debug|x64.ActiveCfg = Debug|x64
 		{6713436A-4B03-46B9-A638-16223CBF45BF}.Debug|x64.Build.0 = Debug|x64
 		{6713436A-4B03-46B9-A638-16223CBF45BF}.Debug|x86.ActiveCfg = Debug|Win32
