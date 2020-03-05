@@ -30,7 +30,7 @@ namespace MoonlightCore
 
 	byte* Module::Find(const char* signature, const char* mask) const
 	{
-		for (int i = 0; i < _moduleSize; i++)
+		for (unsigned int i = 0; i < _moduleSize; i++)
 		{
 			byte* data = &reinterpret_cast<byte*>(_moduleBase)[i];
 			if (Module::Match(data, signature, mask))
@@ -44,7 +44,7 @@ namespace MoonlightCore
 
 	bool Module::Match(const byte* data, const char* signature, const char* mask) const
 	{
-		for (int i = 0; i < strlen(mask); i++)
+		for (unsigned int i = 0; i < strlen(mask); i++)
 		{
 			if (mask[i] == 'x' && data[i] != static_cast<byte>(signature[i]))
 			{
